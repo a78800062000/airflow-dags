@@ -126,7 +126,6 @@ default_args = {
 
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
 
 dag = DAG(
     'fetch_data_and_upload_gcs',  # DAG的唯一ID
