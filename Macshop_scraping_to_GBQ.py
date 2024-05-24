@@ -81,7 +81,7 @@ def extract_urls_from_bigquery(**kwargs):
     query = """
         SELECT URL
         FROM `encoded-axis-415404.Macshop_Data.Info_Macshop_Index_and_Dates`
-        WHERE Start_Date >= '2024-05-01'
+        WHERE Start_Date >= '2000-01-01'
     """
     query_job = client.query(query)
     results = query_job.result()
